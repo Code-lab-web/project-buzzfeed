@@ -1,0 +1,29 @@
+body {font-size: 16px;
+    background-color: black;
+    .hero-container {
+        position: relative;
+        height: 50vh;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .overlay {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .hero-video {
+        position: absolute;
+        z-index: -1;
+    }
+    .hero-heading {
+        position: relative;
+        z-index: 2;
+        color: white;
+        font-size: 50px;
+    }
+}
