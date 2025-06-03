@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="./css.style">
+<form action="http://http.bin.org/anything" method="post">
+<label>
+Message  
+<input type="text" name="message" required>
+</label>
+<label>
+E-mail   
+<input type="email" name="email">
+</label>
+Size
+<label>
+<select name="t-shirtSize"></select>
+<option value="s">Small</option>
+<option value="s">Medium</option>
+<option value="s">Large</option>
+</select>
+</label>
+<button type="submitorder">Order t-shirt</button>
+</form>
+
+<form>
+<h2> Shipping & Billing Information</h2>
+<fieldset>
+ Name
+ <input type="text" name="name"placeholder-"Your name"/>
+</fieldset>    
+
+<fieldset>
+E-mail
+<input type="email" name="email"placeholder-"Your email"/>
+</fieldset>   
+
+<label>
+Adress
+<input type="text" name="adress"placeholder-"Your adress"/>
+</label>   
+
+<label>
+City
+<input type="text" name="city"placeholder-"Your city "/>
+</label>   
+
+<label>
+Postal code
+<input type="text" name="postalCode"placeholder-"Your postalcode"/>
+</label>  
+<label>
+Country
+<select name="country" id="">
+<option value="SE">Sweden</option>
+<option value="EU">EU</option>   
+<option value="Global">Global</option>      
+</select>
+</label>
+</fieldset>
+<botton> type="submit">Pay$34</botton>
+</form>

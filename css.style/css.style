@@ -1,0 +1,145 @@
+
+.flex-parent {
+border: 2px solid green;
+height: 400px;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+h1{
+    color:black;
+  font-size 52px;
+  }
+  * Universal Styles */
+  body {
+  font-family: system-ui;
+  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+  color: white;
+  text-align: center;
+  element.style }
+  border.> 50px solid:
+  padding:> 100px.
+  margin:> 50px 0.
+  .box-one {
+  display: inline;
+  background: #1301ff;
+  .box-two {
+  background: #fe3625;
+  display: inline;
+  h1 {
+  color: 0red
+  }
+  (media ()
+  (media (min.width:668px) {
+     h1 {
+      color: blue;
+      }
+      }
+     @media (orientation: portrait) { 
+     @media (orientation: landscape) { 
+     @media (resolution: 300dpi) { 
+     @media (min-r/esolution: 300dpi) { 
+     @media (max-resolution: 300dpi) { 
+     @media (pointer: none)
+     @media (hover: hover)
+     @media only screen and (max-width: 500px)
+     @media (min-width: 501px) and (max-width: 768px)
+         /* SmartPhones */
+     @media (max-height: 500px)
+       /* Tablet */
+     @media (min-width: 501px) and (max-width: 768px)
+     @media (max-width: 600px) {
+     @media (min-width: 601px) { 
+     @media (min-width: 600px) and (max-width: 900px) {  
+     @media (max-height: 600px) { 
+     @media (min-height: 601px) { 
+     @media (min-height: 600px) and (max-height: 900px) { 
+     @media (resolution: 300dpi) { 
+     @media (min-resolution: 300dpi) { 
+     @media (max-resolution: 300dpi) { 
+     @media (pointer: none)
+     @media (hover: hover)
+     @media only screen and (max-width: 500px)
+     @media (min-width: 501px) and (max-width: 768px)
+       /* normal /*
+     @media (min-width: 769px) and (max-width: 1200px)
+       /* widescreen /*
+     @media (min-width: 1201px)
+      </head>
+      <body>
+      <img src-"./images/SGG.png alt-"logo">
+       <link rel="stylesheet" media="print" href="print.css">
+  <link rel="stylesheet" media="screen" href="screen.css">
+  <link rel="stylesheet" media="screen and (min-width: 480px)" href="example1.css">
+  <link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)" href="example2.css">
+       @media not|only mediatype and (media feature) and (media feature) {
+    CSS-Code;
+       <body>
+     {
+        .flex-parent {
+       border: 2px solid blue;
+       height: 400px;
+       display: flex;
+       align-items: center;
+       justify-content:space-between;
+       flex-direction: row;
+       gap: 4px;
+       flex-wrap: wrap;
+       }
+       
+       .flex-child {
+       width: 100px;
+       height: 40px;
+       }
+       
+        .flex-parent {
+       border: 2px solid blue;
+       height: 400px;
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       }
+       
+       .flex-child {
+       width: 100 px;
+       height: 40 px;
+     {
+       .red {
+       background: red;
+     {
+        .blue {
+       background: blue;
+     {
+         .pink {
+       background: pink;
+     {
+        .orange {
+       background: orange;
+     {
+       h1 {
+      color:green
+      font-size: 52px;
+  }
+  
+  .top-heading{
+      color: red;
+      font-size: 12 px;
+  }
+  
+  .second-heading{
+      color:purple;
+        .grey-box{
+              background-color: grey;
+          padding: 20px;
+          width 400px;
+      }
+       .grey-box img{
+          width: 100%;
+      }
+      }
+  }
+       </sektion>   
+    }    
+      </body>
+      </html>
