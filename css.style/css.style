@@ -1,4 +1,4 @@
-
+import googlefonts from 'googlefonts'
 .flex-parent {
 border: 2px solid green;
 height: 400px;
