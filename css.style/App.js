@@ -1,10 +1,20 @@
 import SGG.png from './SGG.png';
 import './App.css';
 import GardenCard from "./components/GardenCard"
+import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
+import Grid from "@mui/material/Grid"
+import { Container, Grid }from "@mui/material"
 function App() {
     return (
         <div className="App">
+            
+            <Container>
+                <Garden container spacing={5}>
+                    <GardenCard />
+                    </Grid>
+                </Garden>
+            </Container>
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 <p>

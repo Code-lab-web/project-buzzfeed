@@ -1,7 +1,63 @@
 import Paper from '@mui/material/Paper';
-
+import Box from '@mui/material'Box'
+import Grid from "@mui/material/Grid";
+import Typography from '@mui/material/Typography';
+import hoistNonReactStatics from 'styled-components/dist/utils/hoist';
+import { HouseRounded } from '@mui/icons-material';
+import { AccessTime } from "@mui/icons-material"
+import Rating from '@mui/material/Rating';
+import { create } from "@mui/material"
 const GardenCard = () => {
+    const theme = createTheme({
+        components: {}
+    })
+const GardenCard = () = {
+    return ()
+}
+return <Grid item xs={3} > </Grid>;
+<Paper elevation={3}>
+<img src="Flower1.jpg" alt=""
+className="img"
+/>
+<Box paddingX={1}>
+<Typography variant="subtitle1" component="h2">
+Desert>
+</Tyography>
+<Box
+sx={{
+    display: "flex",
+    alignItems: "center"
+}}
+marginTop={3}
 
-    return <Paper>Welcome</Paper>;
+    <AccessTime sx={{width: 12.5 }}/>
+
+    <Rating name"read-only"
+     value={4.75} 
+     readOnly 
+     precision={0.5}
+    size="small" 
+    />
+    <Typography></Typography>
+    </Box>
+}}
+>
+<Typography variant="body2" components="p" marginLeft={0.5}>
+4.5
+5 hours
+</Typography>
+<Typography variant="body3" components="p" marginLeft={1.5}>
+(655 reviews)
+</Typography>
+</Box>
+<Box>
+<Typgraphy>
+<Typography variant="h6" component="h3" marginTop={1.5}>
+(655 reviews)
+</Typography>
+}}
+</Paper>
+</Grid>
+    return <Paper elevation {3} variant="outlined">Welcome</Paper>;
 };
 export default GardenCard;
