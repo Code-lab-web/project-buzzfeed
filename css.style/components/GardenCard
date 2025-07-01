@@ -1,0 +1,7 @@
+import Paper from '@mui/material/Paper';
+
+const GardenCard = () => {
+
+    return <Paper>Welcome</Paper>;
+};
+export default GardenCard;

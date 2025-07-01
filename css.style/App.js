@@ -1,5 +1,7 @@
 import SGG.png from './SGG.png';
 import './App.css';
+import GardenCard from "./components/GardenCard"
+import Paper from '@mui/material/Paper';
 function App() {
     return (
         <div className="App">
@@ -21,3 +23,4 @@ function App() {
         </div>
     )
 }
+export default App;
