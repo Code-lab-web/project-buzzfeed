@@ -6,10 +6,68 @@ import hoistNonReactStatics from 'styled-components/dist/utils/hoist';
 import { HouseRounded } from '@mui/icons-material';
 import { AccessTime } from "@mui/icons-material"
 import Rating from '@mui/material/Rating';
-import { create } from "@mui/material"
+import { createTheme , ThemeProvider } from "@mui/material"
+components: {
+    MuiTypography: {
+        variants:[[
+            {
+                props:: {
+                    variant: "body2",
+                },
+                style: {
+                    fontSize: 11,
+                },
+            },
+            {
+                props: {
+                    variant: "body3",
+                    {,
+                        style: {
+                            fontSize: 9,
+                        },
+                        }
+
+                }
+            }
+                }
+
+                }
+                }
+            }
+        ]
+    }
+    }
+}
+const theme = createTheme({})
 const GardenCard = () => {
     const theme = createTheme({
-        components: {}
+        components: {
+            MuiTypography: {
+                variants: [
+                    {
+                        props: {
+                            variant: "body2"
+                        },
+                        style: {
+                            fontSize: 11,
+
+                        },
+
+                        },
+                        {
+                            props:{
+                                variant: "body3",
+                            },
+                            style: {
+                                fontSize: 9,
+
+                            }
+                        }
+                    },
+                ]
+
+            }
+        }
     })
 const GardenCard = () = {
     return ()
