@@ -4,12 +4,27 @@ import GardenCard from "./components/GardenCard"
 import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
 import Grid from "@mui/material/Grid";
+import gardens from "./data.json"
+import Typography from '@mui/material/Typography';
 function App() {
     return (
         <div className="App">
             <SearchAppBar />
-            <Container sx={{ margin: 5 }}></Container>
+            <Container sx={{ marginY: 5 }}></Container>
             <Container sx={{ margin: 5 }}>
+            {garden.map((garden) => (
+                <Typography
+                variant="h4"
+                component="h2"
+                marginTop={5}
+                marginBottom={3}
+                Top {garden.name} Tours
+                </Typography>
+                />
+            ))>
+
+            ))}
+            )
                 <Grid container spacing={5}>
                     <GardenCard />
                     <GardenCard />
