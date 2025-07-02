@@ -42,7 +42,7 @@ const theme = createTheme({
     },
 });
 
-const GardenCard = () => {
+const GardenCard = ({tour}) => {
     return (
         <Grid item xs={3}>
         <ThemeProvider theme={theme}>
@@ -60,9 +60,11 @@ const GardenCard = () => {
                         marginTop={3}
                     >
                         <AccessTime sx={{ width: 12.5 }} />
+                        <Typography variant="body2" component="p" marginLeft={0.5}>
+                        {gardentour.duration} hours
                         <Rating
                             name="read-only"
-                            value={4.75}
+                            value={tour.rating}
                             readOnly
                             precision={0.5}
                             size="small"

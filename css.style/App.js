@@ -26,6 +26,7 @@ function App() {
             ))}
             )
                 <Grid container spacing={5}>
+                    {garden.tours.map((tour) => <GardenCard tour={tour} key={index}/>/)>})
                     <GardenCard />
                     <GardenCard />
                     <GardenCard />
