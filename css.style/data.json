@@ -1,42 +1,38 @@
 [
+[
     {
-        "id": 1
-        "name": "Garden desert"
-        "garden": [
+        "id": 1,
+        "name": "Garden desert",
+        "garden": {
             "id": 1,
             "name": "Desert-style garden",
             "description": "A garden that features desert plants and minimal water usage",
-            "image": Flower 1.png
+            "image": "Flower 1.png",
             "duration": 5,
             "numberOfReviews": 462,
-            "price":
-
-            "rating": 4.5,
-        },
-        {
-            "id":2
-            "name": "Rose garden",
-            "id": 2
-            "description": "A beautiful garden filled with various types of roses",
-            "image": "Flower 2.png",
-            "duration" :3
-            "numberOfReviews": 320,
-            "price":
-
-            "rating": 4.8,
-
-
-        },
-        {
-            "id": 3
-            "description": "A Japanese garden with traditional elementa"
-            "image": "Flower 3.png",
-            "duration" : 4,
-            "numberOfReviews": 210,
-            "price":
-            
-            "rating": 4.8
+            "price": null,
+            "rating": 4.5
         }
-        
+    },
+    {
+        "id": 2,
+        "name": "Rose garden",
+        "description": "A beautiful garden filled with various types of roses",
+        "image": "Flower 2.png",
+        "duration": 3,
+        "numberOfReviews": 320,
+        "price": null,
+        "rating": 4.8
+    },
+    {
+        "id": 3,
+        "name": "Japanese garden",
+        "description": "A Japanese garden with traditional elements",
+        "image": "Flower 3.png",
+        "duration": 4,
+        "numberOfReviews": 210,
+        "price": null,
+        "rating": 4.8
     }
+]
 ]
