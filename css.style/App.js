@@ -8,6 +8,15 @@ import { Container, Grid }from "@mui/material"
 function App() {
     return (
         <div className="App">
+            <SearchAppBar />
+            <Container margin sx = margin {5}>
+                <Grid container spacing={(5>
+                    <GardenCard />
+                    <GardenCard/>
+                    <GardenCard/>
+                    <GardenCard/>
+                    </Grid>
+                )}
             
             <Container>
                 <Garden container spacing={5}>
