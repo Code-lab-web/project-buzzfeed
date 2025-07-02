@@ -6,8 +6,18 @@ import Paper from '@mui/material/Paper';
 import Grid from "@mui/material/Grid";
 import gardens from "./data.json"
 import Typography from '@mui/material/Typography';
+import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 function App() {
     return (
+        <BrowserRouter>
+        <SearchAppBar />
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/":/id"  element={<GardenTour />} />
+            
+        </Routes>
+        </BrowserRouter>
         <div className="App">
             <SearchAppBar />
             <Container sx={{ marginY: 5 }}></Container>
