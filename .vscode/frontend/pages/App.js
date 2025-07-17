@@ -4,7 +4,7 @@ import GardenCard from "./components/GardenCard"
 import Container from '@mui/material/Container';
 import Paper from '@mui/material/Paper';
 import Grid from "@mui/material/Grid";
-import gardens from "./data.json"
+import gardens from "../../../css.style/data.json"
 import Typography from '@mui/material/Typography';
 import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
