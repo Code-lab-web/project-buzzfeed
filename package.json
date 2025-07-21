@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 "name": "specialgardengroup-api"
 "version": "1.0.0",
 "description": "",
@@ -8,7 +8,7 @@
   "test": "echo\ "Error: no test specified\" && exit 1"
 },
 "author": ""{
-  "license": "ISC"
+  "license": ""
   "dependencies": {}
 }
 {
@@ -25,7 +25,7 @@
     "@babel/present-env":"^7.8.3",
     "nodemon": "^2.0.2"
   }
-=======
+
 {
     "name": "specialgardengroup-first-api",
     "version": "1.0.0",
@@ -43,8 +43,6 @@
             "@babel/present-env":"^7.8.3"
             "nodemon": "^2.0.2"
         }
-
         }
     }
->>>>>>> 2dd7b75 (git commit -m "Code-lab-web")
 }
