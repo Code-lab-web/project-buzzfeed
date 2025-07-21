@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "name": "specialgardengroup-api"
 "version": "1.0.0",
 "description": "",
@@ -24,4 +25,26 @@
     "@babel/present-env":"^7.8.3",
     "nodemon": "^2.0.2"
   }
+=======
+{
+    "name": "specialgardengroup-first-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js -- exec babel-node"
+        "test": "echo\"Error: no test specified\"&& exit I"
+        {,
+        "author": "Johan Skarpsvärd"
+        "license": ""
+        "dependencies":{
+            "@babel/core": "^7.8.3",
+            "@babel/node": "^7.8.3",
+            "@babel/present-env":"^7.8.3"
+            "nodemon": "^2.0.2"
+        }
+
+        }
+    }
+>>>>>>> 2dd7b75 (git commit -m "Code-lab-web")
 }
