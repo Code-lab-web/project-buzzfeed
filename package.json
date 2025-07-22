@@ -1,11 +1,11 @@
 
-"name": "specialgardengroup-api"
+"name": "project-buzzfeed-api"
 "version": "1.0.0",
 "description": "",
 "main": "server.js",
 "scripts": {
   "start": "nodemon server.js -- exec babel-node",
-  "test": "echo\ "Error: no test specified\" && exit 1"
+  "test": "jest"
 },
 "author": ""{
   "license": ""
