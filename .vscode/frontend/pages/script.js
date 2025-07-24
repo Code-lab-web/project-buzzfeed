@@ -61,7 +61,6 @@ const tempText = document.querySelector(".tempText");
 const describeText = document.querySelector(".describeText");
 
 //Variables we can use later to automate API-fethcing:
-const apiKey = "548773e920254208b83a2e2bdadb8f0e";
 let city = "London";
 
 const todaysWeatherFeature = (London) => {
@@ -239,8 +238,7 @@ const weatherForecastData = (London) => {
         weatherForecastData("London");
       }
     });
-  }
-};
+  };
 
 const toggleSearchField = () => {
   //This just controls the toggling between opening and closing the search field
