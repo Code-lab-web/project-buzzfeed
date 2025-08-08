@@ -1,6 +1,6 @@
 import { useUserStore } from "../stores/userstore"
 export const UserSettings = () => {
-    const { toggleLogin, } inCrementAge, setUserName} isLoggedIn, userName } = useUserStore()
+    const { toggleLogin, incrementAge, setUserName, isLoggedIn, userName } = useUserStore()
     return(
         <div>
             <h2>User Settings</h2>

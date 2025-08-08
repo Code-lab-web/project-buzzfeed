@@ -1,16 +1,14 @@
-"name": "project-buzzfeed-api"
-"version": "1.0.0",
-"description": "",
-"main": "server.js",
-"scripts": {
-  "start": "nodemon server.js -- exec babel-node",
-  "test": "jest"
-},
-"author": "Code-lab-web"{
-  "license": "ISC"
-  "dependencies": {}
-}
 {
+  "name": "project-buzzfeed-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js -- exec babel-node",
+    "test": "jest"
+  },
+  "author": "Code-lab-web",
+  "license": "ISC",
   "dependencies": {
     "@fontsource/roboto": "^5.2.6",
     "@mui/icons-material": "^7.2.0",
@@ -18,29 +16,10 @@
     "@mui/styled-engine-sc": "^7.2.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "styled-components": "^6.1.19"
+    "styled-components": "^6.1.19",
     "@babel/core": "^7.8.3",
     "@babel/node": "^7.8.3",
-    "@babel/present-env":"^7.8.3",
+    "@babel/present-env": "^7.8.3",
     "nodemon": "^2.0.2"
   }
-
-{
-    "name": "project-buzzfeed-api",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-        "start": "nodemon server.js -- exec babel-node"
-        "test": "jest"
-        "author": "Code-lab-web"
-        "license": "ISC"
-        "dependencies":{
-            "@babel/core": "^7.8.3",
-            "@babel/node": "^7.8.3",
-            "@babel/present-env":"^7.8.3"
-            "nodemon": "^2.0.2"
-        }
-        }
-    }
 }
