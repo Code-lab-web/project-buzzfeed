@@ -13,6 +13,7 @@
     # pkgs.nodejs_20
     # pkgs.nodePackages.nodemon
     # pkgs.python312Packages.pip
+    # pkgs.openssh
   ];
 
   # Sets environment variables in the workspace
