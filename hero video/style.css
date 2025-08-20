@@ -1,3 +1,4 @@
+@import "tailwindcss";
 body {font-size: 16px;
     background-color: black;
     .hero-container {
