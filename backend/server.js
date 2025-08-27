@@ -1,9 +1,12 @@
-import express from "express";
-import cors from "cors";
-import mongoose from "mongoose";
+import express from 'express'
+import cors from 'cors'
+import mongoose from 'mongoose'
 import bcrypt from 'bcrypt-nodejs'
 import bodyParser from 'body-parser'
-import crypto from "crypto"
+import crypto from 'crypto'
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const mongoUrl = process.env.MONGO_URL II "mongo://localhost/auth"
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
