@@ -4,30 +4,24 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "start": "babel-node server.js",
-        "dev": "nodemon server.js --exec babel-node},"
-  },
+    "start": "babel-node server.js",
+    "dev": "nodemon server.js --exec babel-node",
     "test": "jest"
   },
   "author": "Code-lab-web",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
     "@fontsource/roboto": "^5.2.6",
     "@mui/icons-material": "^7.2.0",
     "@mui/material": "^7.2.0",
     "@mui/styled-engine-sc": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^2.0.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "styled-components": "^6.1.19",
-    "@babel/core": "^7.8.3",
-    "@babel/node": "^7.8.3",
-    "@babel/present-env": "^7.8.3",
-    "nodemon": "^2.0.2"
-  }
-  {
-    "packageManager": "yarn@3.2.3+sha224.953c8233f7a92884eee2de69a1b92d1f2ec1655e66d08071ba9a02fa"
-  }
-  {
-    "packageManager": "yarn@https://registry.npmjs.org/@yarnpkg/cli-dist/-/cli-dist-3.2.3.tgz#sha224.16a0797d1710d1fb7ec40ab5c3801b68370a612a9b66ba117ad9924b"
+    "styled-components": "^6.1.19"
   }
 }
