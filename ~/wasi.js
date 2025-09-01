@@ -10,6 +10,7 @@ const {
 } = primordials;
 
 const {
+  ERR_INVALID_ARG_TYPE,
   ERR_INVALID_ARG_VALUE,
   ERR_WASI_ALREADY_STARTED,
 } = require('internal/errors').codes;
@@ -39,8 +40,12 @@ class WASI {
     validateObject(options, 'options');
 
     let _WASI;
-    validateString(options.version, 'options.version');
-    switch (options.version) {
+    if (options.version !== undefined) {
+      validateString(options.version, 'options.version');
+    }
+    const version = options.version || 'unstable';
+
+    switch (version) {
       case 'unstable':
         ({ WASI: _WASI } = internalBinding('wasi'));
         this[kBindingName] = 'wasi_unstable';
@@ -56,9 +61,14 @@ class WASI {
                                         'unsupported WASI version');
     }
 
-    if (options.args !== undefined)
+    if (options.args !== undefined) {
       validateArray(options.args, 'options.args');
-    const args = ArrayPrototypeMap(options.args || [], String);
+    }
+    const args = ArrayPrototypeMap(options.args || [], (arg) => {
+      validateString(arg, 'options.args[]');
+      return String(arg);
+    });
+
 
     const env = [];
     if (options.env !== undefined) {
@@ -66,8 +76,14 @@ class WASI {
       ArrayPrototypeForEach(
         ObjectEntries(options.env),
         ({ 0: key, 1: value }) => {
-          if (value !== undefined)
+          if (value !== undefined) {
+            validateString(key, 'options.env key');
+            validateString(value, 'options.env value');
+            if (key.includes('=')) {
+              throw new ERR_INVALID_ARG_VALUE('options.env key', key, 'cannot contain "="');
+            }
             ArrayPrototypePush(env, `${key}=${value}`);
+          }
         });
     }
 
@@ -76,8 +92,11 @@ class WASI {
       validateObject(options.preopens, 'options.preopens');
       ArrayPrototypeForEach(
         ObjectEntries(options.preopens),
-        ({ 0: key, 1: value }) =>
-          ArrayPrototypePush(preopens, String(key), String(value)),
+        ({ 0: key, 1: value }) => {
+          validateString(key, 'options.preopens key');
+          validateString(value, 'options.preopens value');
+          ArrayPrototypePush(preopens, String(key), String(value));
+        }
       );
     }
 
@@ -90,7 +109,9 @@ class WASI {
     const wrap = new _WASI(args, env, preopens, stdio);
 
     for (const prop in wrap) {
-      wrap[prop] = FunctionPrototypeBind(wrap[prop], wrap);
+      if (typeof wrap[prop] === 'function') {
+        wrap[prop] = FunctionPrototypeBind(wrap[prop], wrap);
+      }
     }
 
     let returnOnExit = true;
@@ -116,8 +137,14 @@ class WASI {
       throw new ERR_WASI_ALREADY_STARTED();
     }
 
-    validateObject(instance, 'instance');
+    if (instance === undefined || instance === null) {
+      throw new ERR_INVALID_ARG_TYPE('instance', 'Object', instance);
+    }
     validateObject(instance.exports, 'instance.exports');
+
+    if (memory === undefined || !(memory instanceof WebAssembly.Memory)) {
+       throw new ERR_INVALID_ARG_TYPE('memory', 'WebAssembly.Memory', memory);
+    }
 
     this[kSetMemory](memory);
 
@@ -131,7 +158,9 @@ class WASI {
 
     const { _start, _initialize } = this[kInstance].exports;
 
-    validateFunction(_start, 'instance.exports._start');
+    if (typeof _start !== 'function') {
+      throw new ERR_INVALID_ARG_TYPE('instance.exports._start', 'function', _start);
+    }
     validateUndefined(_initialize, 'instance.exports._initialize');
 
     try {
@@ -153,7 +182,9 @@ class WASI {
 
     validateUndefined(_start, 'instance.exports._start');
     if (_initialize !== undefined) {
-      validateFunction(_initialize, 'instance.exports._initialize');
+      if (typeof _initialize !== 'function') {
+        throw new ERR_INVALID_ARG_TYPE('instance.exports._initialize', 'function', _initialize);
+      }
       _initialize();
     }
   }
