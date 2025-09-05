@@ -6,6 +6,7 @@
   "scripts": {
     "start": "babel-node server.js",
     "dev": "nodemon server.js --exec babel-node",
+    "prebuild": "jest",
     "test": "jest"
   },
   "author": "Code-lab-web",
