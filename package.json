@@ -29,6 +29,7 @@
     "localforage": "^1.10.0",
     "match-sorter": "^8.1.0",
     "mongodb": "^6.19.0",
+    "moongoose": "^0.0.1",
     "nodemon": "^3.1.10",
     "passport": "^0.7.0",
     "passport-facebook": "^3.0.0",
