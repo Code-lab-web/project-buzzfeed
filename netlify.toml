@@ -1,3 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
 [[redirects]]
   from = "/old-path"
   to = "/new-path"
@@ -6,7 +10,6 @@
   query = {path = ":path"}
   conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
 
-## This rule redirects to an external API, signing requests with a secret
 [[redirects]]
   from = "/search"
   to = "https://api.mysearch.com"
