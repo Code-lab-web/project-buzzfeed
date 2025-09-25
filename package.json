@@ -12,9 +12,8 @@
   "author": "Code-lab-web",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.8.3",
     "@babel/node": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
+    "@babel/polyfill": "^7.12.1",
     "@fontsource/roboto": "^5.2.6",
     "@mui/icons-material": "^7.2.0",
     "@mui/material": "^7.2.0",
@@ -43,9 +42,14 @@
     "zustand": "^5.0.8"
   },
   "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.4",
+    "@babel/plugin-transform-arrow-functions": "^7.27.1",
+    "@babel/preset-env": "^7.28.3",
     "@babel/preset-flow": "^7.27.1",
     "@babel/preset-react": "^7.27.1",
     "@babel/preset-typescript": "^7.27.1",
+    "@babel/register": "^7.28.3",
     "@tailwindcss/postcss": "^4.1.13",
     "@tailwindcss/vite": "^4.1.13",
     "@types/node": "^24.5.2",
