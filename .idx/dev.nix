@@ -6,6 +6,7 @@
 
   # Use https://search.nixos.org/packages to find packages
   packages = [
+    pkgs.python311Packages.pip
     pkgs.ollama
     pkgs.sudo
     pkgs.go
