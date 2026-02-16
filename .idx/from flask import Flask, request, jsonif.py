@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 import re
+import os
 
 app= Flask(__name__)
 def validate_password(password):
@@ -37,5 +38,7 @@ def sinup():
     return jsonify({"message": "User signed up succesfully"}), 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Enable debug mode explicitly via the FLASK_DEBUG environment variable (e.g., FLASK_DEBUG=1)
+    debug = os.getenv("FLASK_DEBUG", "").lower() in ("1", "true", "yes")
+    app.run(debug=debug)
 
