@@ -37,5 +37,5 @@ def sinup():
     return jsonify({"message": "User signed up succesfully"}), 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
